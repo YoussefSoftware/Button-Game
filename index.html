@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="buttonGameMedia.css">
+    <link rel="stylesheet" href="buttonGame.css" />
+    <title>Button game</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <header>
+        <div class="logo">BUTTON</div>
+        
+        <nav class="menu">
+          <ul>
+            <li>Settings</li>
+            <li>ME</li>
+            <li>MORE GAMES</li>
+          </ul>
+        </nav>
+        <!-- burger menu -->
+        <div class="burgerMenu">
+          <i class="fa fa-bars" id="burgerIcon"></i>
+          <ul class="burgerLinks" id="burgerLinks">
+            <li>Settings</li>
+            <li>ME</li>
+            <li>MORE GAMES</li>
+          </ul>
+        </div>
+        
+      </header>
+      <div id="startup">
+        <div class="start">
+          <button id="helpBtn">Help</button>
+          <button id="startBtn">Start Game</button>
+          <button id="settingBtn">Settings</button>
+        </div>
+        <div class="squares">
+          <div class="static">
+            <h2>الإحصائيات</h2>
+            <h3>
+              : عدد الأشخاص الذين شاركو في اللعبة <br /><br />
+              <span>12</span>
+            </h3>
+            <h3>
+              : أعلى مستوى ثم الوصول له <br /><br />
+              <span>10</span>
+            </h3>
+           
+            <h3>
+              : عدد الأشخاص الذين وصلوا  له <br /><br />
+              <span>2</span>
+            </h3>
+            <h3>
+              : عدد الأشخاص الذين فازوا باللعبة <br /><br />
+              <span>0</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="content" id="content">
+        <div class="hint">
+          <p id="hintP"></p>
+        </div>
+        <div class="buttons">
+          <button id="btn1"></button>
+          <button id="btn2"></button>
+          <button id="btn3"></button>
+          <button id="btn4"></button>
+        </div>
+
+        
+      </div>
+      <div class="road" id="road">
+        <div class="levels">
+          <div class="noob">Noob</div>
+          <div class="easy">Easy</div>
+          <div class="medium">Medium</div>
+          <div class="hard">Hard</div>
+          <div class="smart">Smart</div>
+          <div class="legend">Legend</div>
+          <div class="Einstein">Einstein</div>
+          <div class="hacker">Hacker</div>
+          <div class="winner">Winner</div>
+        </div>
+        <div class="images">
+          <img src="images/noob.png" alt="sorry" class="level-img" id="levelImage">
+        </div>
+      </div>
+    </div>
+
+    <!-- start alert -->
+    <div class="loseAlert" id="loseAlert">
+      <div class="box">
+        <p>You Lose!</p>
+        <button onclick="replay()">إعادة المحاولة</button>
+        <button>لا أستطيع اللعبة صعبة</button>
+      </div>
+    </div>
+
+    <script src="button.js"></script>
+  </body>
+</html>
